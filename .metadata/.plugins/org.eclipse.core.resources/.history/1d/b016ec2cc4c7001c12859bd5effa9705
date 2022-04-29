@@ -1,0 +1,17 @@
+import java.time.LocalDate;
+
+public class Visa extends TarjetaCredito {
+	
+	public void Visa(int nt, String ch, LocalDate fv, String marca , int mc ) {
+		setNumeroTarjeta(nt);
+		setCardHolder(ch);
+		setFechaVencimiento(fv);
+		setMarca(marca);
+		setMontoConsumido(mc);
+	}
+	
+	public void calculoTasa() {
+		
+	}
+
+}

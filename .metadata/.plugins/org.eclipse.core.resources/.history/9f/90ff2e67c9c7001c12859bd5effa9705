@@ -1,0 +1,19 @@
+import java.time.LocalDate;
+
+public class Nara extends TarjetaCredito{
+
+	public void Nara(int nt, String ch, LocalDate fv, String marca , int mc ) {
+		setNumeroTarjeta(nt);
+		setCardHolder(ch);
+		setFechaVencimiento(fv);
+		setMarca(marca);
+		setMontoConsumido(mc);
+	}
+	
+	public double calculoTasa() {
+		LocalDate fechaActual = null;
+		fechaActual.now();
+		int diaMes = fechaActual.getDayOfMonth();
+		return diaMes/0.5;
+	}
+}

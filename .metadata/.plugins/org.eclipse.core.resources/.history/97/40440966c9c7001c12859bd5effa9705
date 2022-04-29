@@ -1,0 +1,19 @@
+import java.time.LocalDate;
+
+public class Amex extends TarjetaCredito {
+
+	public void Amex(int nt, String ch, LocalDate fv, String marca , int mc ) {
+		setNumeroTarjeta(nt);
+		setCardHolder(ch);
+		setFechaVencimiento(fv);
+		setMarca(marca);
+		setMontoConsumido(mc);
+	}
+	
+	public double calculoTasa() {
+		LocalDate fechaActual = null;
+		fechaActual.now();
+		int mes = fechaActual.getMonthValue();
+		return mes/0.1;
+	}
+}

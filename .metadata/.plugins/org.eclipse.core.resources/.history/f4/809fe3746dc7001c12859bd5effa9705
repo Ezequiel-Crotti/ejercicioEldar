@@ -1,0 +1,19 @@
+import java.util.Date;
+
+public class TarjetaCredito {
+
+	private int	numeroTarjeta;
+	private String cardHolder;
+	private Date fechaVencimiento;
+	private String marca; 
+	
+	public boolean validaConsumo() {
+		return true;
+	}
+	
+	public boolean validaFechaVencimiento() {
+		return false;
+	}
+	
+	
+}

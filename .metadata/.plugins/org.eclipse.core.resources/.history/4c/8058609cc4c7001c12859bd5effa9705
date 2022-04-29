@@ -1,0 +1,12 @@
+import java.time.LocalDate;
+
+public class Amex extends TarjetaCredito {
+
+	public void Amex(int nt, String ch, LocalDate fv, String marca , int mc ) {
+		setNumeroTarjeta(nt);
+		setCardHolder(ch);
+		setFechaVencimiento(fv);
+		setMarca(marca);
+		setMontoConsumido(mc);
+	}
+}

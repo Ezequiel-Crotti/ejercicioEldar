@@ -1,0 +1,27 @@
+
+public class Principal {
+
+	public static void main(String[] args) {
+		
+		Visa tarjetaVisa = new Visa();
+		Nara tarjetaNara = new Nara();
+		Amex tarjetaAmex = new Amex();
+		
+		//Indica si la tarjeta es valida
+		if(tarjetaAmex.validaFechaVencimiento()) {
+			System.out.println("La tarjeta es valida");
+		}else {
+			System.out.println("La tarjeta No es valida");
+		}
+		
+		//Informa si la operacion es valida
+		if(tarjetaNara.validaConsumo()) {
+			System.out.println("La operacion es valida");
+		}else {
+			System.out.println("La operacion No es valida");
+		}
+		
+		//
+	}
+
+}

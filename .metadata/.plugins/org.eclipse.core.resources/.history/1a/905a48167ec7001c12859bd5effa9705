@@ -1,0 +1,13 @@
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Esbozo de método generado automáticamente
+		Visa tarjetaVisa = new Visa();
+		Nara tarjetaNara = new Nara();
+		Amex tarjetaAmex = new Amex();
+		
+		
+	}
+
+}
