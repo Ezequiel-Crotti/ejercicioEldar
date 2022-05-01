@@ -1,22 +1,23 @@
+package Tarjetas;
 import java.time.LocalDate;
 import java.util.Date;
 
 public class TarjetaCredito {
 
-	private String	numeroTarjeta;
+	private String numeroTarjeta;
 	private String cardHolder;
 	private LocalDate fechaVencimiento;
-	private String marca; 
+	private String marca;
 	private int montoConsumido;
-	
+
 	public boolean validaConsumo() {
-		
-		if (this.montoConsumido<1000 && this.montoConsumido>0) {
+
+		if (this.montoConsumido < 1000 && this.montoConsumido > 0) {
 			return true;
 		}
 		return false;
 	}
-	
+
 	public boolean validaFechaVencimiento() {
 		return this.fechaVencimiento.isBefore(LocalDate.now());
 	}
@@ -26,11 +27,11 @@ public class TarjetaCredito {
 		System.out.println("\n\tMarca: " + this.marca);
 		System.out.println("\n\tNombre y Apellido: " + this.cardHolder);
 		System.out.println("\n\tNumero de Tarjeta: " + this.numeroTarjeta);
-		System.out.println("\n\tFecha de Vencimiento: " + this.fechaVencimiento.getMonth()+"/"+this.fechaVencimiento.getYear());
+		System.out.println("\n\tFecha de Vencimiento: " + this.fechaVencimiento.getMonth() + "/"
+				+ this.fechaVencimiento.getYear());
 		System.out.println("\n\tMonto Consumido: " + this.montoConsumido);
 	}
-	
-	
+
 	public String getNumeroTarjeta() {
 		return numeroTarjeta;
 	}
@@ -70,6 +71,5 @@ public class TarjetaCredito {
 	public void setMontoConsumido(int montoConsumido) {
 		this.montoConsumido = montoConsumido;
 	}
-	
-	
+
 }
